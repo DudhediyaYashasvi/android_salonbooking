@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <!-- 👤 Owner Icon -->
+    <ImageView
+        android:id="@+id/imageViewOwnerIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/salon"
+        android:contentDescription="Owner Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 📋 View Customer Bookings -->
+    <Button
+        android:id="@+id/btnViewBookings"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Customer Bookings"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFB703"
+        app:layout_constraintTop_toBottomOf="@id/imageViewOwnerIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- 🧰 Manage Services -->
+    <Button
+        android:id="@+id/btnManageServices"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Manage Services"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFB703"
+        app:layout_constraintTop_toBottomOf="@id/btnViewBookings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- ⏰ Manage Time Slots -->
+    <Button
+        android:id="@+id/btnManageSlots"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Manage Time Slots"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFB703"
+        app:layout_constraintTop_toBottomOf="@id/btnManageServices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

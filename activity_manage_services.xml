@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter service name"
+        android:textColor="@color/black"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnAddService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFB703"
+        android:text="Add Service"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/serviceList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
